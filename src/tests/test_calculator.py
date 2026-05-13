@@ -11,4 +11,17 @@ def test_app():
     welcome_message = my_calculator.get_hello_message()
     assert "== Calculatrice v1.0 ==" in welcome_message
 
-# TODO: ajoutez les tests
+def test_addition():
+    my_calculator = Calculator()
+    result = my_calculator.addition(2, 3)
+    assert result == 5
+
+def test_subtraction():
+    my_calculator = Calculator()
+    result = my_calculator.subtraction(5, 3)
+    assert result == 2
+
+def test_division():
+    my_calculator = Calculator()
+    result = my_calculator.division(10, 2)
+    assert result == 5
